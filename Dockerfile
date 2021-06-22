@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
-    LANG=ja_JP.UTF-8 \
+    LANG=en_US.UTF-8 \
     LC_ALL=${LANG} \
     LANGUAGE=${LANG} \
     TZ=Asia/Tokyo
@@ -28,7 +28,7 @@ RUN apt-get update && \
       && \
     # Install japanese language packs(optional)
     apt-get install -y \
-      language-pack-ja-base language-pack-ja \
+      language-pack-en-base language-pack-en \
       ibus-anthy \
       fonts-takao \
       && \
